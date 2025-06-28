@@ -1,0 +1,6 @@
+# Dev Override Values for my Helm Chart
+
+container:
+  image: httpd:2.4
+
+replicaCount: 4
