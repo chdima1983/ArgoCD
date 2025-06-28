@@ -11,14 +11,14 @@ spec:
     namespace: app2
   source:
     path   : "HelmCharts/MyChart2"
-    repoURL: "git@github.com:chdima1983/ArgoCD.git"
+    repoURL: "https://github.com/chdima1983/ArgoCD.git"
     targetRevision: HEAD
     helm:
       valueFiles:
       - values_dev.yaml
       parameters:
       - name: "container.image"
-        value: chdima1983/app2:v2
+        value: chdima/repo:latest
 
   project: default
   syncPolicy:
