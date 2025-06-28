@@ -3,4 +3,4 @@
 container:
   image: httpd:2.4
 
-replicaCount: 2
+replicaCount: 4
